@@ -13,6 +13,7 @@ sudo amazon-linux-extras install epel -y
 sudo yum install stress -y
 
 # Use --timeout to stop it automatically e.g.
+stress -c 4 # this make ec2 with 4 CPU
 stress --cpu 4 --timeout 60s
 
 # Note: For AL 2023 you can simply run the install command, no need to to install epel.
